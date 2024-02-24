@@ -1,0 +1,26 @@
+/* Estilos CSS para tu página */
+
+.container {
+  perspective: 1000px; 
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  transition: transform 0.3s ease;
+}
+
+nav ul li:hover {
+  transform: scale(1.2);
+}
+
+h2, h3 {
+  transition: transform 0.3s ease;
+}
+
+h2:hover, h3:hover {
+  transform: scale(1.1);
+}
