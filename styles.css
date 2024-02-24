@@ -1,26 +1,107 @@
-/* Estilos CSS para tu página */
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
 
 .container {
-  perspective: 1000px; 
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Estilos del Navbar */
+nav {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 24px;
 }
 
 nav ul {
-  display: flex;
-  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
+  display: inline-block;
+  margin-right: 20px;
   transition: transform 0.3s ease;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 nav ul li:hover {
-  transform: scale(1.2);
-}
-
-h2, h3 {
-  transition: transform 0.3s ease;
-}
-
-h2:hover, h3:hover {
   transform: scale(1.1);
+}
+
+nav ul li:hover a {
+  color: #ffc107;
+}
+
+/* Estilos de las secciones */
+.seccion {
+  padding: 120px 0 50px; /* Ajuste del relleno */
+  text-align: center;
+}
+
+.seccion h2 {
+  margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Transición suave para la animación */
+}
+
+.seccion h2:hover {
+  transform: scale(1.1); /* Efecto de escala al pasar el mouse */
+}
+
+.seccion p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.proyecto {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.seccion {
+  animation: fadeInUp 1s ease;
+  animation-fill-mode: both;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
